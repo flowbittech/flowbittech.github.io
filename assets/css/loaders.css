@@ -1,0 +1,116 @@
+.preloader {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.95);
+  TEXT-ALIGN: CENTER;
+}
+
+
+
+
+.loader,
+.loader:before,
+.loader:after {border-radius: 50%;width: 2.5em;height: 2.5em;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation: load7 1.8s infinite ease-in-out;animation: load7 1.8s infinite ease-in-out;color: #060606;}
+.loader {color: #000000;font-size: 12px;margin: 0px auto;position: relative;text-indent: -9999em;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation-delay: -0.16s;animation-delay: -0.16s;}
+.loader:before,
+.loader:after {content: '';position: absolute;top: 0;color: #060606;}
+.loader:before {left: -3.5em;-webkit-animation-delay: -0.32s;animation-delay: -0.32s;color: #060606;}
+.loader:after {
+left: 3.5em;
+}
+@-webkit-keyframes load7 {
+0%,
+80%,
+100% {
+  box-shadow: 0 2.5em 0 -1.3em;
+}
+40% {
+  box-shadow: 0 2.5em 0 0;
+}
+}
+@keyframes load7 {
+0%,
+80%,
+100% {
+  box-shadow: 0 2.5em 0 -1.3em;
+}
+40% {
+  box-shadow: 0 2.5em 0 0;
+}
+}
+
+.prel{
+  position: relative;
+  /* top: 40%; */
+  transform: translateY(0%);
+  height: 100%;
+}
+
+.preloader img {
+  display: none;
+}
+
+
+
+
+
+
+#centerdiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#centerdiv ul {
+  display: flex;
+  -webkit-padding-start: 0px;
+}
+#centerdiv ul li {
+  list-style: none;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  margin: 0 4px;
+  border-radius: 50%;
+  animation: bounce 1s linear infinite;
+}
+#centerdiv ul li:nth-child(1) {
+  animation-delay: 0.2s;
+  background-color: #315be8;
+}
+#centerdiv ul li:nth-child(2) {
+  animation-delay: 0.6s;
+  background-color: #5878e3;
+}
+#centerdiv ul li:nth-child(3) {
+  animation-delay: 0.1s;
+  background-color: #673ab7;
+}
+#centerdiv ul li:nth-child(4) {
+  animation-delay: 0.8s;
+  background-color: #8e46d0;
+}
+#centerdiv ul li:nth-child(5) {
+  animation-delay: 0.5s;
+  background-color: #be48d2;
+}
+#centerdiv ul li:nth-child(6) {
+  animation-delay: 0.1s;
+  background-color: #de83ed;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
